@@ -1,55 +1,51 @@
-# MagicSlots
+# MagicSlots: Spin to Survive!
 
-**MagicSlots** is a prototype slot machine game designed for the Playdate handheld console. It features a classic 3-reel, 3-row layout with multiple paylines and interactive crank controls.
+**MagicSlots** is an innovative **RPG-Slot Machine Hybrid** for the Playdate. It combines the thrill of casino spinning with the strategy of a dungeon crawler. Spin the reels to attack monsters, block damage, and earn loot!
 
 ## Features
 
-*   **Interactive Controls**: Use the Playdate's signature **Crank** to spin the reels!
-*   **3x3 Grid**: Expanded view showing 3 rows of symbols across 3 reels.
-*   **5 Paylines**: Win on horizontal lines (Top, Center, Bottom) and both diagonals.
-*   **Advanced Scoring**:
-    *   Multi-line win calculation.
-    *   Partial payouts for Cherry symbols.
-*   **Mock Leaderboard**: Simulation of submitting high scores to an online server.
+### ⚔️ RPG Combat System
+*   **Spin to Fight**: Every spin is a turn in battle.
+*   **Hero Classes**: Choose your playstyle:
+    *   **Warrior**: High HP, Bonus Damage with Swords.
+    *   **Mage**: High MP, Bonus Damage with Magic.
+    *   **Rogue**: High Crit Chance (Double Damage).
+*   **Monster Progression**: Fight an endless stream of Slimes, Goblins, Orcs, and Dragons. They get stronger as you level up!
+
+### 🎰 The Reels
+*   **Re-Themed Symbols**:
+    *   🗡️ **SWORD**: Physical Damage.
+    *   🔥 **FIREBALL**: Magical Damage.
+    *   🛡️ **SHIELD**: Blocks the next monster attack.
+    *   🧪 **POTION**: Heals your HP.
+    *   💰 **COIN**: Grants Gold.
+    *   📖 **SPELL BOOK (Wild)**: Matches any symbol.
+*   **Physics & Feel**:
+    *   **Crank Interaction**: Crank harder to spin faster!
+    *   **Anticipation**: If two reels match, the third reel spins longer with rising tension sound.
+    *   **Impact**: Screen shake on damage and reel stops.
+
+### ✨ Magic System
+*   **Mana**: Build up mana by losing spins (taking damage).
+*   **Wild Spell**: When Mana is full, press **B** to cast a powerful spell.
+*   **Rune Tracing Mini-Game**: Successfully trace the D-Pad rune pattern to cast the spell with a **2x Multiplier**!
+
+### 🖥️ Interface
+*   **Split Layout**:
+    *   **Left**: The Slot Machine Cabinet.
+    *   **Right**: RPG Status (HP, MP, Monster Info, Combat Log).
+*   **Floating Combat Text**: Damage numbers and effects float up in real-time.
 
 ## Controls
 
-*   **Crank**: Spin the reels (rotate forward or backward).
-*   **A Button**: 
-    *   Stop the reels while spinning.
-    *   Reset the game after a win.
+*   **Crank**: Spin the reels.
+*   **A Button**: Stop reels / Confirm selection.
+*   **B Button**: Cast Magic Spell (when Mana full).
+*   **D-Pad**: Select Class / Play Rune Mini-Game.
 
-## Scoring System
-
-### Symbol Values (3-of-a-kind)
-*   💎 **GEM**: 1000 Points (Jackpot)
-*   7️⃣ **7**: 500 Points
-*   🔔 **BELL**: 200 Points
-*   ➖ **BAR**: 100 Points
-*   🍒 **CHERRY**: 50 Points
-
-### Special Rules
-*   **Cherry Partial Wins** (Left-to-Right):
-    *   **1 Cherry** (Reel 1): 5 Points
-    *   **2 Cherries** (Reel 1 & 2): 20 Points
-
-### Paylines
-1.  **Center Horizontal**
-2.  **Top Horizontal**
-3.  **Bottom Horizontal**
-4.  **Diagonal** (Top-Left to Bottom-Right)
-5.  **Diagonal** (Bottom-Left to Top-Right)
-
-## Building & Running
-
-1.  Ensure you have the [Playdate SDK](https://play.date/dev/) installed.
-2.  Open the project directory in your terminal.
-3.  Compile using `pdc`:
-    ```bash
-    pdc Source MagicSlots.pdx
-    ```
-4.  Open `MagicSlots.pdx` in the Playdate Simulator.
+## Development Status
+*   **Current Version**: RPG Prototype v2.0
+*   **Platform**: Playdate SDK (Lua)
 
 ## Credits
-
-Developed as a prototype for the Playdate.
+Developed by User & Agent.
