@@ -1,0 +1,7 @@
+name=MagicSlots
+author=User
+description=A beautiful animated slot machine game.
+bundleID=com.user.MagicSlots
+version=1.0
+buildNumber=1
+imagePath=SystemAssets
